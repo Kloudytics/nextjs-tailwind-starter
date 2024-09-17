@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js + TailwindCSS Starter
 
-## Getting Started
+This is a starter template for building modern web applications using Next.js, TailwindCSS, and ShadCN UI components. It includes basic configurations, font setup, and test content to ensure that everything works out of the box.
 
-First, run the development server:
+## Project Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+After cloning or downloading this template, update the following in `layout.tsx` to match your project name and description:
+
+```typescript
+export const metadata: Metadata = {
+  title: "Your Project Name",
+  description: "A brief description of your project",
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Use
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Clone this repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`git clone https://github.com/yourusername/nextjs-tailwind-starter.git`
 
-## Learn More
+Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+`npm install`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start the development server:
+`npm run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Customize the project:
 
-## Deploy on Vercel
+Update the components and styles based on your project requirements.
+Modify layout.tsx and other pages to fit your project's structure.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Folder Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- pages/ - Contains the main pages and routes of the project.
+- components/ - Custom UI components.
+- styles/ - TailwindCSS styles and configuration.
+- layout.tsx - Base layout file with metadata and layout structure.
+
+## Technologies Used
+
+- Next.js - React framework for building server-side rendered applications.
+- TailwindCSS - Utility-first CSS framework for styling.
+- ShadCN UI - Pre-built UI components integrated with TailwindCSS.
+
+Feel free to use this starter template for any project requiring a clean and efficient setup with Next.js and TailwindCSS.
